@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Kullanım Koşulları — Berra</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #0f172a;
+    --muted: #64748b;
+    --accent: #0EA5E9;
+    --surface: #f1f5f9;
+    --border: rgba(15, 23, 42, 0.10);
+    --max-width: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #070b14;
+      --fg: #e2e8f0;
+      --muted: #94a3b8;
+      --surface: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.08);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  header.top {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+  header.top .row {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: -0.3px;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .brand .dot { color: var(--accent); }
+  nav.lang {
+    display: flex;
+    gap: 4px;
+    background: var(--surface);
+    padding: 4px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+  }
+  nav.lang button {
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  nav.lang button.active {
+    background: var(--accent);
+    color: #ffffff;
+  }
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+  h1 {
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    margin: 0 0 8px;
+  }
+  h2 {
+    font-size: 19px;
+    letter-spacing: -0.2px;
+    margin: 28px 0 8px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 18px 0 6px;
+    color: var(--fg);
+  }
+  p { margin: 8px 0 12px; color: var(--fg); }
+  ul { padding-left: 22px; margin: 8px 0 16px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .effective {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0 0 24px;
+  }
+  .other-doc {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .other-doc a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .other-doc a:hover { text-decoration: underline; }
+  .body.hidden { display: none; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="row">
+    <a href="index.html" class="brand">Berra<span class="dot">.</span></a>
+    <nav class="lang" role="tablist" aria-label="Language">
+      <button data-locale="tr" class="active" role="tab" aria-selected="true">TR</button>
+      <button data-locale="en" role="tab" aria-selected="false">EN</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="body" data-locale="tr">
+    <p>Berra Kullanım Koşulları</p>
+<p>Yürürlük tarihi: [YAYIN TARİHİ]</p>
+<h2>1. Taraflar ve Kabul</h2>
+<p>Bu Kullanım Koşulları ("Koşullar"), Onur Demir ("Geliştirici", "biz") tarafından sunulan Berra mobil uygulaması ("Uygulama") ile sen ("Kullanıcı") arasında yapılan yasal bir sözleşmedir. Uygulamayı yüklemek, açmak veya kullanmak suretiyle bu Koşulları okuduğunu, anladığını ve bağlayıcı olduğunu kabul ettiğini beyan edersin. Bu Koşulları kabul etmiyorsan Uygulamayı kullanmamalı ve cihazından kaldırmalısın.</p>
+<h2>2. Hizmetin Tanımı</h2>
+<p>Berra; telefonundaki yinelenen fotoğrafları, büyük dosyaları, gereksiz junk dosyaları ve yinelenen kişileri tespit etmene ve dilersen silmene yardımcı olan bir cihaz temizleme aracıdır. Bellek optimizasyonu ve depolama analizi gibi yardımcı özellikler sunar. Tüm tarama, analiz ve silme işlemleri cihazında yerel olarak gerçekleşir; verilerin Geliştirici sunucularına gönderilmez.</p>
+<h2>3. Yaş Sınırı</h2>
+<p>Uygulamayı kullanabilmek için en az 13 yaşında olmalısın. 18 yaşın altındaysan ebeveyn veya yasal vasinin onayıyla Uygulamayı kullanabilirsin.</p>
+<h2>4. Kullanıcı Sorumlulukları ve Silme İşlemleri Hakkında Önemli Uyarı</h2>
+<p>Uygulama, dosya silme yetkisi gerektiren bir araçtır. Sen bir öğeyi silmeyi onayladığında ilgili dosya cihazından kalıcı olarak kaldırılır.</p>
+<p>a. Hangi dosyaların silineceğini onaylama yetkisi tamamen sana aittir. b. Silinen dosyaların geri getirilememesi ihtimaline karşı önemli verilerinin yedeğini almak senin sorumluluğundadır. c. Otomatik öneriler (ör. yinelenen fotoğraf önerileri, eski indirme önerileri) sezgisel bir yardımdır; her bir öneriyi kabul etmeden önce gözden geçirmen gerekir. d. Yanlışlıkla silinen veya silinemeyen dosyalardan kaynaklanan veri kayıplarından Geliştirici sorumlu tutulamaz.</p>
+<h2>5. Yasaklı Kullanım</h2>
+<p>Uygulamayı:</p>
+<p>a. Yürürlükteki yasalara, üçüncü tarafların haklarına veya kamu düzenine aykırı biçimde kullanamazsın. b. Tersine mühendislik yapamaz, kaynak kodunu çıkaramaz, değiştiremez veya türev çalışmalar oluşturamazsın (yürürlükteki yasaların açıkça izin verdiği ölçüler hariç). c. Otomatik araçlar (bot, scraper) ile kötüye kullanamaz veya hizmeti aksatmaya yönelik girişimde bulunamazsın. d. Sahip olmadığın cihazlardaki dosyalara erişmek veya bunları silmek için kullanamazsın.</p>
+<h2>6. Cihaz İzinleri</h2>
+<p>Uygulama, işlevlerini yerine getirebilmek için aşağıdaki sistem izinlerini talep eder:</p>
+<ul>
+<li>Medya kitaplığı erişimi (fotoğraf, video, ses) — yinelenen ve büyük medyaları tespit etmek için</li>
+<li>Kişiler erişimi — yinelenen ve eksik kişileri bulmak için</li>
+<li>Tüm dosyalar erişimi (Android) — junk dosyaları taramak için</li>
+<li>Bildirim izni — temizlik hatırlatmaları ve yeni bulgu bildirimleri için</li>
+<li>Arka plan tarama izni — periyodik kontroller için</li>
+</ul>
+<p>İzinleri istediğin zaman cihaz ayarlarından geri alabilirsin; bu durumda ilgili özellikler çalışmaz.</p>
+<h2>7. Fikri Mülkiyet</h2>
+<p>Uygulama yazılımı, tasarımı, logosu, marka adı ("Berra") ve tüm ilişkili içerikler Geliştiricinin veya lisans verenlerinin mülkiyetindedir ve telif hakkı ile diğer fikri mülkiyet yasalarıyla korunmaktadır. Bu Koşullar sana yalnızca Uygulamayı kişisel ve ticari olmayan amaçlarla kullanma hakkı veren sınırlı, münhasır olmayan, devredilemez bir lisans tanır.</p>
+<h2>8. Sorumluluğun Sınırlandırılması</h2>
+<p>Yürürlükteki yasaların izin verdiği azami ölçüde:</p>
+<p>a. Uygulama "olduğu gibi" ve "kullanılabilir olduğu sürece" sunulur. Geliştirici, herhangi bir açık veya zımni garanti vermez. b. Geliştirici; veri kaybı, kâr kaybı, iş kesintisi veya dolaylı, tesadüfi, özel, sonuç olarak doğan zararlardan sorumlu tutulamaz. c. Geliştiricinin toplam sorumluluğu, herhangi bir durumda Uygulamayı edinmek için (varsa) ödediğin tutarla sınırlıdır.</p>
+<p>Bu sınırlamalar, Türk hukuku uyarınca tüketicinin yasal haklarına halel getirmez.</p>
+<h2>9. Hizmet Değişiklikleri ve Sona Erme</h2>
+<p>Geliştirici, Uygulamanın özelliklerini, görünümünü veya çalışma şeklini önceden haber vermeksizin değiştirme, askıya alma veya sona erdirme hakkını saklı tutar. Geliştirici, bu Koşulları ihlal ettiğini tespit etmesi halinde, Uygulamayı kullanma hakkını derhal sona erdirebilir.</p>
+<h2>10. Bu Koşullarda Değişiklik</h2>
+<p>Geliştirici, bu Koşulları zaman zaman güncelleyebilir. Önemli değişiklikleri Uygulama içinde sana bildiririz. Güncel Koşulları kabul etmiyorsan Uygulamayı kullanmayı bırakman gerekir.</p>
+<h2>11. Uygulanacak Hukuk ve Uyuşmazlık Çözümü</h2>
+<p>Bu Koşullar, Türkiye Cumhuriyeti yasalarına tabidir. Bu Koşullardan doğacak uyuşmazlıkların çözümünde, tüketici mevzuatı ile saklı kalan haklarına halel getirmeksizin, İstanbul Mahkemeleri ve İcra Daireleri yetkilidir.</p>
+<h2>12. Bölünebilirlik</h2>
+<p>Bu Koşulların herhangi bir hükmünün geçersiz veya uygulanamaz bulunması halinde, kalan hükümler yürürlükte kalmaya devam eder.</p>
+<h2>13. İletişim</h2>
+<p>Sorular, geri bildirimler ve yasal bildirimler için aşağıdaki kanaldan bize ulaşabilirsin:</p>
+<p>E-posta: iletisim@berra.app Adres: [ADRES — yayın öncesi doldurulacak]</p>
+<p>Berra'yı seçtiğin için teşekkürler.</p>
+  </div>
+  <div class="body hidden" data-locale="en">
+    <p>Berra Terms of Use</p>
+<p>Effective date: [YAYIN TARİHİ]</p>
+<h2>1. Parties and Acceptance</h2>
+<p>These Terms of Use ("Terms") are a legal agreement between Onur Demir ("Developer", "we") and you ("User") concerning the Berra mobile application ("App"). By installing, opening, or using the App you confirm that you have read, understood, and agree to be bound by these Terms. If you do not accept these Terms, you must not use the App and must remove it from your device.</p>
+<h2>2. Description of the Service</h2>
+<p>Berra is a device-cleaning utility that helps you find and, if you choose, remove duplicate photos, large files, junk files, and duplicate contacts on your phone. It also offers helper features such as memory optimization and storage analysis. All scanning, analysis, and deletion happen locally on your device; your data is not transmitted to the Developer's servers.</p>
+<h2>3. Age Requirement</h2>
+<p>You must be at least 13 years old to use the App. If you are under 18, you may use the App only with the consent of a parent or legal guardian.</p>
+<h2>4. User Responsibilities and Important Notice About Deletion</h2>
+<p>The App is a tool that requires file-deletion privileges. When you confirm the removal of an item, the corresponding file is permanently removed from your device.</p>
+<p>a. You alone decide which files are deleted. b. It is your responsibility to keep backups of important data in case deleted items cannot be recovered. c. Automatic suggestions (e.g. duplicate photo recommendations, old download proposals) are heuristics that assist you; please review each suggestion before accepting it. d. The Developer cannot be held liable for data loss arising from accidentally deleted or undeleted files.</p>
+<h2>5. Prohibited Use</h2>
+<p>You may not:</p>
+<p>a. Use the App in any way that violates applicable laws, the rights of third parties, or public order. b. Reverse-engineer, decompile, modify, or create derivative works of the App (except where applicable law expressly permits). c. Misuse the App with automated tools (bots, scrapers) or attempt to disrupt the service. d. Use the App to access or delete files on devices you do not own.</p>
+<h2>6. Device Permissions</h2>
+<p>The App requests the following system permissions to function:</p>
+<ul>
+<li>Media library access (photos, videos, audio) — to detect duplicate and large media</li>
+<li>Contacts access — to find duplicate and incomplete contacts</li>
+<li>All-files access (Android) — to scan junk files</li>
+<li>Notification permission — for cleanup reminders and new findings</li>
+<li>Background scan permission — for periodic checks</li>
+</ul>
+<p>You may revoke any permission at any time from your device settings; affected features will then stop working.</p>
+<h2>7. Intellectual Property</h2>
+<p>The App's software, design, logo, brand name ("Berra"), and all related content are owned by the Developer or its licensors and are protected by copyright and other intellectual property laws. These Terms grant you a limited, non-exclusive, non-transferable license to use the App for personal, non-commercial purposes.</p>
+<h2>8. Limitation of Liability</h2>
+<p>To the maximum extent permitted by applicable law:</p>
+<p>a. The App is provided "as is" and "as available" without any express or implied warranties. b. The Developer is not liable for any data loss, loss of profit, business interruption, or any indirect, incidental, special, or consequential damages. c. The Developer's total liability shall not exceed the amount you paid (if any) to acquire the App.</p>
+<p>These limitations do not affect your statutory consumer rights under Turkish law.</p>
+<h2>9. Service Changes and Termination</h2>
+<p>The Developer reserves the right to modify, suspend, or discontinue any feature, look, or behavior of the App without prior notice. The Developer may immediately terminate your right to use the App if you breach these Terms.</p>
+<h2>10. Changes to These Terms</h2>
+<p>The Developer may update these Terms from time to time. We will notify you in-app of significant changes. If you do not accept the updated Terms, you must stop using the App.</p>
+<h2>11. Governing Law and Dispute Resolution</h2>
+<p>These Terms are governed by the laws of the Republic of Türkiye. Disputes arising out of these Terms shall be resolved in the courts of Istanbul, without prejudice to any mandatory consumer protections.</p>
+<h2>12. Severability</h2>
+<p>If any provision of these Terms is held invalid or unenforceable, the remaining provisions shall remain in effect.</p>
+<h2>13. Contact</h2>
+<p>For questions, feedback, and legal notices, you can reach us at:</p>
+<p>Email: iletisim@berra.app Address: [ADRES — yayın öncesi doldurulacak]</p>
+<p>Thank you for choosing Berra.</p>
+  </div>
+  <div class="other-doc">
+    <a href="privacy.html">Gizlilik Politikası · Privacy Policy →</a>
+  </div>
+</main>
+<script>
+  const buttons = document.querySelectorAll('nav.lang button');
+  const bodies = document.querySelectorAll('.body');
+  const saved = localStorage.getItem('berra-legal-locale');
+  if (saved) setLocale(saved);
+  buttons.forEach((b) => b.addEventListener('click', () => setLocale(b.dataset.locale)));
+  function setLocale(locale) {
+    buttons.forEach((b) => {
+      const on = b.dataset.locale === locale;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    bodies.forEach((d) => {
+      d.classList.toggle('hidden', d.dataset.locale !== locale);
+    });
+    localStorage.setItem('berra-legal-locale', locale);
+  }
+</script>
+</body>
+</html>

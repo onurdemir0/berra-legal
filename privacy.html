@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Gizlilik Politikası — Berra</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #0f172a;
+    --muted: #64748b;
+    --accent: #0EA5E9;
+    --surface: #f1f5f9;
+    --border: rgba(15, 23, 42, 0.10);
+    --max-width: 720px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #070b14;
+      --fg: #e2e8f0;
+      --muted: #94a3b8;
+      --surface: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.08);
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  header.top {
+    border-bottom: 1px solid var(--border);
+    padding: 16px 20px;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+  header.top .row {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .brand {
+    font-weight: 800;
+    font-size: 17px;
+    letter-spacing: -0.3px;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .brand .dot { color: var(--accent); }
+  nav.lang {
+    display: flex;
+    gap: 4px;
+    background: var(--surface);
+    padding: 4px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+  }
+  nav.lang button {
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  nav.lang button.active {
+    background: var(--accent);
+    color: #ffffff;
+  }
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+  h1 {
+    font-size: 28px;
+    letter-spacing: -0.6px;
+    margin: 0 0 8px;
+  }
+  h2 {
+    font-size: 19px;
+    letter-spacing: -0.2px;
+    margin: 28px 0 8px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 18px 0 6px;
+    color: var(--fg);
+  }
+  p { margin: 8px 0 12px; color: var(--fg); }
+  ul { padding-left: 22px; margin: 8px 0 16px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .effective {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0 0 24px;
+  }
+  .other-doc {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .other-doc a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .other-doc a:hover { text-decoration: underline; }
+  .body.hidden { display: none; }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="row">
+    <a href="index.html" class="brand">Berra<span class="dot">.</span></a>
+    <nav class="lang" role="tablist" aria-label="Language">
+      <button data-locale="tr" class="active" role="tab" aria-selected="true">TR</button>
+      <button data-locale="en" role="tab" aria-selected="false">EN</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="body" data-locale="tr">
+    <p>Berra Gizlilik Politikası</p>
+<p>Yürürlük tarihi: [YAYIN TARİHİ]</p>
+<h2>1. Veri Sorumlusu</h2>
+<p>Bu Gizlilik Politikası ("Politika"), Berra mobil uygulamasını ("Uygulama") sunan Onur Demir ("Geliştirici", "biz") tarafından, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu sıfatıyla yayımlanmıştır.</p>
+<p>Geliştiriciye aşağıdaki adreslerden ulaşabilirsiniz:</p>
+<p>E-posta: iletisim@berra.app KVKK başvuruları: kvkk@berra.app Adres: [ADRES — yayın öncesi doldurulacak]</p>
+<h2>2. Özet — Berra Verilerinle Ne Yapar?</h2>
+<p>Kısaca: Tarama ve analiz işleminin tamamı telefonunda yerel olarak gerçekleşir; fotoğraflarına, dosyalarına, rehberine veya tarama sonuçlarına Geliştirici asla erişemez. Uygulamayı ücretsiz tutmak için <strong>Google AdMob</strong> reklam ağı entegrasyonu mevcuttur — reklam gösterimi için cihazına özgü tanımlayıcılar (Reklam Kimliği) Google'a iletilir. Bu, kişisel veri toplamaktan farklıdır ve aşağıdaki bölüm 3.7'de detaylandırılmıştır. İçerikleri AdMob dışında üçüncü taraflarla paylaşmıyoruz, satmıyoruz veya kiralamıyoruz.</p>
+<h2>3. İşlenen Veriler ve Amaçları</h2>
+<p>Uygulama, işlevini yerine getirebilmek için aşağıdaki veri kategorilerine cihazında erişir. Bu veriler cihazından dışarıya çıkmaz.</p>
+<h3>3.1. Medya Kitaplığı (fotoğraf, video, ses)</h3>
+<ul>
+<li>Kapsam: Galerideki ve cihazdaki medya dosyalarının meta verileri (boyut, oluşturma zamanı, çözünürlük, dosya adı, küçük resim).</li>
+<li>Amaç: Yinelenen ve benzer fotoğrafları, ekran görüntülerini, büyük video ve ses dosyalarını tespit etmek; senin onayınla silmek.</li>
+<li>İşleme yeri: Yalnızca cihazın.</li>
+</ul>
+<h3>3.2. Kişiler (Rehber)</h3>
+<ul>
+<li>Kapsam: Rehberindeki kayıtların ad, telefon ve e-posta bilgileri.</li>
+<li>Amaç: Yinelenen ve eksik kişileri tespit etmek; senin onayınla silmek.</li>
+<li>İşleme yeri: Yalnızca cihazın.</li>
+</ul>
+<h3>3.3. Cihaz Dosya Sistemi</h3>
+<ul>
+<li>Kapsam: "Tüm dosyalar erişimi" izni verirsen Downloads, Documents ve genel kullanılabilir Android/media klasörlerindeki dosya meta verileri (yol, boyut, değiştirme zamanı, uzantı).</li>
+<li>Amaç: Junk ve eski dosyaları (.tmp, .log, eski indirmeler vb.) tespit etmek; senin onayınla silmek.</li>
+<li>İşleme yeri: Yalnızca cihazın.</li>
+</ul>
+<h3>3.4. Cihaz Bilgileri</h3>
+<ul>
+<li>Kapsam: Toplam ve kullanılabilir RAM, disk depolama bilgileri, işletim sistemi sürümü, üretici/model bilgisi.</li>
+<li>Amaç: Bellek ve depolama sayfalarındaki istatistikleri göstermek, optimize özelliklerini sunmak.</li>
+<li>İşleme yeri: Yalnızca cihazın.</li>
+</ul>
+<h3>3.5. Bildirim Tercihleri</h3>
+<ul>
+<li>Kapsam: Bildirim izninin verilip verilmediği, bildirim geçmişi.</li>
+<li>Amaç: Hatırlatma ve bilgilendirme bildirimleri sunmak.</li>
+<li>İşleme yeri: Yalnızca cihazın.</li>
+</ul>
+<h3>3.6. Uygulama Tercihleri</h3>
+<ul>
+<li>Kapsam: Tema seçimi, dil seçimi, onboarding tamamlanma durumu, kabul ettiğin sözleşmeler.</li>
+<li>Amaç: Uygulamayı tercihlerine göre yapılandırmak.</li>
+<li>İşleme yeri: Yalnızca cihazın.</li>
+</ul>
+<h3>3.7. Reklam Tanımlayıcıları (AdMob)</h3>
+<ul>
+<li>Kapsam: Cihaz reklam kimliği (Android Advertising ID / Apple IDFA — kullanıcı tarafından sıfırlanabilen rastgele tanımlayıcılar), genel cihaz model bilgisi, IP adresi, uygulama sürümü, görüntülenen reklam etkileşim verileri.</li>
+<li>Amaç: Google AdMob aracılığıyla taramalar arasında gösterilen geçiş (interstitial) reklamlarının kişiselleştirilmesi ve performansının ölçülmesi.</li>
+<li>İşleme yeri: Google Ireland Limited (AB ülkeleri için) / Google LLC (diğer ülkeler için) sunucuları.</li>
+<li>Veri minimizasyonu: Berra bu işlem sırasında ad, telefon, e-posta, fotoğraf, dosya adı veya tarama sonucu gibi hiçbir kişisel veriyi göndermez — yalnızca AdMob SDK'sının kendi otomatik olarak gönderdiği yukarıdaki teknik tanımlayıcılar gönderilir.</li>
+<li>Kullanıcı kontrolü: iOS'ta App Tracking Transparency (ATT) penceresinden "İzin Verme"yi seçerek kişiselleştirmeyi kapatabilirsin (genel reklamlar gösterilmeye devam eder). Android'de Ayarlar → Google → Reklamlar bölümünden "Kişiselleştirilmiş reklamları kapat" diyebilirsin. İstediğin zaman aynı yerden reklam kimliğini sıfırlayabilirsin.</li>
+<li>Daha fazla bilgi: AdMob'un kendi gizlilik politikası https://policies.google.com/privacy adresinde yayımlanmıştır.</li>
+</ul>
+<h2>4. Verilerin Saklanması</h2>
+<p>Tüm veriler cihazının yerel depolama alanında (AsyncStorage ve uygulama önbelleği) saklanır. Geliştirici hiçbir veriyi kendi sunucusunda tutmaz, yedeklemez veya işlemez.</p>
+<p>Saklama süreleri:</p>
+<ul>
+<li>Tarama sonuçları (foto, dosya, kişi, junk): yeniden tarama yapılana veya kullanıcı tarafından temizlenene kadar</li>
+<li>Bildirim geçmişi: 30 gün veya manuel temizlik</li>
+<li>Tercihler: kullanıcı uygulamayı kaldırana kadar</li>
+</ul>
+<p>Uygulamayı cihazdan kaldırmak yerel verilerin tamamını siler.</p>
+<h2>5. Üçüncü Taraflarla Paylaşım</h2>
+<p>Geliştirici fotoğraflarını, dosyalarını, kişilerini veya tarama sonuçlarını hiçbir üçüncü tarafla paylaşmaz, satmaz veya kiralamaz. Aşağıda listelenen sınırlı teknik entegrasyonlar dışında üçüncü taraf veri akışı yoktur:</p>
+<ul>
+<li><strong>Google AdMob (reklam):</strong> Bölüm 3.7'de detaylandırıldığı üzere reklam tanımlayıcıları ve cihazın genel teknik bilgileri AdMob'a iletilir. Berra, AdMob'un kişisel verilerinizi diğer Google servislerine bağlamasını talep etmez.</li>
+<li><strong>Sistem bildirimleri:</strong> Google/Apple'ın yerleşik bildirim altyapıları kullanılır; bu altyapılar Geliştiricinin kontrolü dışındadır.</li>
+<li><strong>Anonim çökme/hata raporlama (Sentry):</strong> Ayarlar → Tanılama → "Anonim hata raporları" anahtarını AÇMADIYSAN hiçbir veri gönderilmez. Açtığında çökme bilgileri (cihaz modeli, OS sürümü, hata stack trace, uygulama sürümü) Sentry servislerine gönderilir; kişisel veri, fotoğraf, kişi veya dosya adı gönderilmez. Bu seçeneği istediğin zaman kapatabilirsin.</li>
+</ul>
+<h2>6. Çerezler ve Benzer Teknolojiler</h2>
+<p>Uygulama mobil bir yazılım olduğundan web çerezi kullanmaz. Yerel depolama için yalnızca cihaz üzerindeki AsyncStorage kullanılır.</p>
+<h2>7. KVKK Kapsamındaki Haklarınız</h2>
+<p>KVKK madde 11 uyarınca aşağıdaki haklara sahipsin:</p>
+<p>a. Kişisel verilerinin işlenip işlenmediğini öğrenme, b. Kişisel verilerin işlenmişse buna ilişkin bilgi talep etme, c. Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme, ç. Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme, d. Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme, e. KVKK madde 7'de öngörülen şartlar çerçevesinde kişisel verilerin silinmesini veya yok edilmesini isteme, f. (d) ve (e) bentleri uyarınca yapılan işlemlerin, kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme, g. İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi aleyhine bir sonucun ortaya çıkmasına itiraz etme, ğ. Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraman hâlinde zararın giderilmesini talep etme.</p>
+<p>Berra'da işlenen tüm veriler cihazında yerel olarak tutulduğu için bu haklar pratik olarak doğrudan cihazınızı yönetmenizle gerçekleşir: cihaz ayarlarından izinleri kaldırabilir, uygulamayı silerek tüm yerel verilerin imhasını sağlayabilirsiniz. Yine de yukarıdaki yollardan bize ulaşabilirsiniz.</p>
+<h2>8. AB / GDPR Bildirimi</h2>
+<p>Avrupa Birliği'nde ikamet ediyorsan GDPR madde 13-22 uyarınca erişim, düzeltme, silme, kısıtlama, taşınabilirlik ve itiraz haklarına sahipsin. Tüm veriler cihazında yerel kaldığı için bu haklar büyük ölçüde cihaz ayarlarınla gerçekleştirilir. İhtiyaç hâlinde iletisim@berra.app adresinden bize ulaş.</p>
+<h2>9. Çocukların Gizliliği</h2>
+<p>Uygulama 13 yaşın altındaki kullanıcılara yönelik değildir ve bilerek 13 yaş altı kullanıcıların verilerini toplamayız. Çocuğunuzun Uygulamayı kullandığını fark ederseniz lütfen bizimle iletişime geçin.</p>
+<h2>10. Güvenlik</h2>
+<p>Veriler cihazından dışarı çıkmaz; iletim sırasında ifşa riski yoktur. Cihazındaki veri güvenliği işletim sisteminin sandbox ve şifreleme mekanizmalarına dayanır. Uygulamanın yetkilendirilmemiş erişimini önlemek için cihazını ekran kilidi ve güncel işletim sistemiyle korumanı öneririz.</p>
+<h2>11. Politika Değişiklikleri</h2>
+<p>Bu Politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikleri Uygulama içinde sana bildiririz ve gerektiğinde yeniden onayını alırız. Güncel sürümün yürürlük tarihini bu sayfanın başında bulabilirsin.</p>
+<h2>12. İletişim</h2>
+<p>Bu Politikayla ilgili her türlü soru, talep veya KVKK kapsamındaki başvuruların için aşağıdaki kanaldan bize ulaşabilirsin:</p>
+<p>E-posta: iletisim@berra.app KVKK başvuruları: kvkk@berra.app Adres: [ADRES — yayın öncesi doldurulacak]</p>
+<p>Berra'yı seçtiğin için teşekkürler. Gizliliğin bizim için önemli.</p>
+  </div>
+  <div class="body hidden" data-locale="en">
+    <p>Berra Privacy Policy</p>
+<p>Effective date: [YAYIN TARİHİ]</p>
+<h2>1. Data Controller</h2>
+<p>This Privacy Policy ("Policy") is published by Onur Demir ("Developer", "we") who provides the Berra mobile application ("App"), in our capacity as data controller under Türkiye's Personal Data Protection Law No. 6698 ("KVKK") and, where applicable, the EU General Data Protection Regulation ("GDPR").</p>
+<p>You can contact the Developer at:</p>
+<p>Email: iletisim@berra.app KVKK requests: kvkk@berra.app Address: [ADRES — yayın öncesi doldurulacak]</p>
+<h2>2. Summary — What Does Berra Do With Your Data?</h2>
+<p>In short: All scanning and analysis happens entirely on your device; the Developer never has access to your photos, files, contacts, or scan results. To keep the App free, a <strong>Google AdMob</strong> integration is present — device-specific identifiers (Advertising ID) are sent to Google for ad serving. This is distinct from personal data collection and is detailed in Section 3.7 below. We do not share content with third parties beyond AdMob, nor do we sell or rent it.</p>
+<h2>3. Data Processed and Purposes</h2>
+<p>To function, the App accesses the following categories of data on your device. None of this data leaves your device.</p>
+<h3>3.1. Media Library (photos, videos, audio)</h3>
+<ul>
+<li>Scope: Metadata of media files in your gallery (size, creation time, resolution, filename, thumbnail).</li>
+<li>Purpose: To detect duplicate and similar photos, screenshots, large videos and audio; to delete them with your consent.</li>
+<li>Processing location: Your device only.</li>
+</ul>
+<h3>3.2. Contacts</h3>
+<ul>
+<li>Scope: Name, phone, and email information of records in your address book.</li>
+<li>Purpose: To detect duplicate and incomplete contacts; to delete them with your consent.</li>
+<li>Processing location: Your device only.</li>
+</ul>
+<h3>3.3. Device File System</h3>
+<ul>
+<li>Scope: When you grant "All files access," metadata of files in Downloads, Documents, and publicly accessible Android/media folders (path, size, modification time, extension).</li>
+<li>Purpose: To detect junk and stale files (.tmp, .log, old downloads, etc.); to delete them with your consent.</li>
+<li>Processing location: Your device only.</li>
+</ul>
+<h3>3.4. Device Information</h3>
+<ul>
+<li>Scope: Total and available RAM, disk storage info, OS version, manufacturer/model.</li>
+<li>Purpose: To display memory and storage statistics and offer optimization features.</li>
+<li>Processing location: Your device only.</li>
+</ul>
+<h3>3.5. Notification Preferences</h3>
+<ul>
+<li>Scope: Whether notification permission is granted, notification history.</li>
+<li>Purpose: To deliver reminders and informational notifications.</li>
+<li>Processing location: Your device only.</li>
+</ul>
+<h3>3.6. App Preferences</h3>
+<ul>
+<li>Scope: Theme choice, language choice, onboarding completion state, accepted agreements.</li>
+<li>Purpose: To configure the App according to your preferences.</li>
+<li>Processing location: Your device only.</li>
+</ul>
+<h3>3.7. Advertising Identifiers (AdMob)</h3>
+<ul>
+<li>Scope: Device advertising identifier (Android Advertising ID / Apple IDFA — random identifiers that you can reset at any time), general device model info, IP address, app version, ad-interaction telemetry.</li>
+<li>Purpose: To personalize and measure performance of interstitial ads shown between scans via Google AdMob.</li>
+<li>Processing location: Google Ireland Limited (EU users) / Google LLC (other regions).</li>
+<li>Data minimization: Berra never transmits names, phone numbers, emails, photos, filenames, or scan results in connection with ads — only the technical identifiers above, automatically sent by the AdMob SDK.</li>
+<li>User control: On iOS, choosing "Ask App Not to Track" in the App Tracking Transparency prompt disables ad personalization (generic ads still show). On Android, you can opt out via Settings → Google → Ads → "Opt out of Ads Personalization". You can reset your advertising identifier at any time from the same place.</li>
+<li>More info: AdMob's own privacy policy is published at https://policies.google.com/privacy.</li>
+</ul>
+<h2>4. Data Retention</h2>
+<p>All data is stored in your device's local storage (AsyncStorage and app cache). The Developer does not retain, back up, or process any data on its own servers.</p>
+<p>Retention periods:</p>
+<ul>
+<li>Scan results (photos, files, contacts, junk): until you re-scan or clear them</li>
+<li>Notification history: 30 days or manual cleanup</li>
+<li>Preferences: until you uninstall the App</li>
+</ul>
+<p>Uninstalling the App removes all local data.</p>
+<h2>5. Sharing With Third Parties</h2>
+<p>The Developer does not share, sell, or rent your photos, files, contacts, or scan results to any third party. Apart from the limited technical integrations listed below, no third-party data flow occurs:</p>
+<ul>
+<li><strong>Google AdMob (advertising):</strong> As detailed in Section 3.7, advertising identifiers and general device technical info are transmitted to AdMob. Berra does not request that AdMob link your personal data to other Google services.</li>
+<li><strong>System notifications:</strong> Google's/Apple's built-in notification infrastructure is used; that infrastructure is outside the Developer's control.</li>
+<li><strong>Anonymous crash/error reporting (Sentry):</strong> No data is sent unless you turn ON "Anonymous crash reports" under Settings → Diagnostics. When enabled, crash information (device model, OS version, error stack trace, app version) is sent to Sentry's servers. No personal data, photos, contacts, or filenames are transmitted. You can disable this at any time.</li>
+</ul>
+<h2>6. Cookies and Similar Technologies</h2>
+<p>The App is mobile software and does not use web cookies. Local storage uses only on-device AsyncStorage.</p>
+<h2>7. Your Rights Under KVKK</h2>
+<p>Pursuant to Article 11 of the KVKK you have the right to:</p>
+<p>a. Learn whether your personal data is processed, b. Request information regarding such processing, c. Learn the purpose of processing and whether the data is used in line with that purpose, d. Know third parties to whom data is transferred domestically or abroad, e. Request correction of incomplete or incorrect data, f. Request deletion or destruction of personal data within the framework of Article 7, g. Request notification of (e) and (f) actions to third parties to whom data was transferred, h. Object to results obtained against you through analysis solely by automated systems, i. Claim damages in the event of loss arising from unlawful processing.</p>
+<p>Since all data processed in Berra is held locally on your device, these rights are practically exercised by managing your own device: you can revoke permissions in device settings or uninstall the App to delete all local data. You can still reach us through the channels above.</p>
+<h2>8. EU / GDPR Notice</h2>
+<p>If you reside in the European Union, under GDPR Articles 13–22 you have rights to access, rectification, erasure, restriction, portability, and objection. Because all data stays on your device, these rights are largely exercised through your device settings. If you need to contact us, write to iletisim@berra.app.</p>
+<h2>9. Children's Privacy</h2>
+<p>The App is not intended for users under 13 and we do not knowingly collect data from such users. If you become aware that your child is using the App, please contact us.</p>
+<h2>10. Security</h2>
+<p>Data does not leave your device, so there is no transmission exposure. On-device data security relies on the operating system's sandbox and encryption mechanisms. We recommend protecting your device with a screen lock and keeping your OS up to date.</p>
+<h2>11. Changes to This Policy</h2>
+<p>We may update this Policy from time to time. We will notify you in-app of significant changes and ask for renewed consent if necessary. The current effective date appears at the top of this page.</p>
+<h2>12. Contact</h2>
+<p>For any questions, requests, or KVKK-related applications regarding this Policy, you can reach us at:</p>
+<p>Email: iletisim@berra.app KVKK requests: kvkk@berra.app Address: [ADRES — yayın öncesi doldurulacak]</p>
+<p>Thank you for choosing Berra. Your privacy matters to us.</p>
+  </div>
+  <div class="other-doc">
+    <a href="terms.html">Kullanım Koşulları · Terms of Use →</a>
+  </div>
+</main>
+<script>
+  const buttons = document.querySelectorAll('nav.lang button');
+  const bodies = document.querySelectorAll('.body');
+  const saved = localStorage.getItem('berra-legal-locale');
+  if (saved) setLocale(saved);
+  buttons.forEach((b) => b.addEventListener('click', () => setLocale(b.dataset.locale)));
+  function setLocale(locale) {
+    buttons.forEach((b) => {
+      const on = b.dataset.locale === locale;
+      b.classList.toggle('active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    bodies.forEach((d) => {
+      d.classList.toggle('hidden', d.dataset.locale !== locale);
+    });
+    localStorage.setItem('berra-legal-locale', locale);
+  }
+</script>
+</body>
+</html>
